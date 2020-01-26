@@ -1,0 +1,30 @@
+# Translation of Plugins - OG - Stable (latest release) in Polish
+# This file is distributed under the same license as the Plugins - OG - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-05-04 18:15:44+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: pl\n"
+"Project-Id-Version: Plugins - OG - Stable (latest release)\n"
+
+#. Author of the plugin
+msgid "Marcin Pietrzak"
+msgstr "Marcin Pietrzak"
+
+#. Description of the plugin
+msgid "Very tiny Open Graph plugin - add featured image as facebook image. This plugin do not have any configuration - you can check how it works looking into page source."
+msgstr "Bardzo mała wtyczka implementująca Open Grapha - Dodaje miniaturę wpisu jako obrazek dla FaceBooka. Wtyczka nie ma żadnej konfiguracji, aby sprawdzić czy działa, obejrzyj źródło strony."
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "http://iworks.pl/"
+msgstr "http://iworks.pl/"
+
+#. Plugin Name of the plugin
+#: og.php:20
+msgid "OG"
+msgstr "OG"
