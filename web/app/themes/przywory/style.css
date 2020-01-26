@@ -1,0 +1,2217 @@
+/*
+
+    Theme Name: Przywory
+
+    Theme URI: https://przywory.eu
+
+    Description: Sołectwo Przywory
+
+    Version: 1.0
+
+    Author: Adam Poloczek
+
+    Author URI: mailto:adampoloczek97@gmail.com
+
+*/
+
+
+
+
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+img,
+
+legend {
+
+  border: 0;
+
+}legend,
+
+td,
+
+th {
+
+  padding: 0;
+
+}html {
+
+  font-family: sans-serif;
+
+
+
+      -ms-text-size-adjust: 100%;
+
+  -webkit-text-size-adjust: 100%;
+
+}body {
+
+  margin: 0;
+
+}article,
+
+aside,
+
+details,
+
+figcaption,
+
+figure,
+
+footer,
+
+header,
+
+hgroup,
+
+main,
+
+menu,
+
+nav,
+
+section,
+
+summary {
+
+  display: block;
+
+}audio,
+
+canvas,
+
+progress,
+
+video {
+
+  display: inline-block;
+
+
+
+  vertical-align: baseline;
+
+}audio:not([controls]) {
+
+  display: none;
+
+
+
+  height: 0;
+
+}[hidden],
+
+template {
+
+  display: none;
+
+}a {
+
+  background-color: transparent;
+
+}a:active,
+
+a:hover {
+
+  outline: 0;
+
+}abbr[title] {
+
+  border-bottom: 1px dotted;
+
+}b,
+
+optgroup,
+
+strong {
+
+  font-weight: 700;
+
+}dfn {
+
+  font-style: italic;
+
+}h1 {
+
+  font-size: 2em;
+
+
+
+  margin: .67em 0;
+
+}mark {
+
+  color: #000;
+
+  background: #ff0;
+
+}small {
+
+  font-size: 80%;
+
+}sub,
+
+sup {
+
+  font-size: 75%;
+
+  line-height: 0;
+
+
+
+  position: relative;
+
+
+
+  vertical-align: baseline;
+
+}sup {
+
+  top: -.5em;
+
+}sub {
+
+  bottom: -.25em;
+
+}svg:not(:root) {
+
+  overflow: hidden;
+
+}figure {
+
+  margin: 1em 40px;
+
+}hr {
+
+  box-sizing: content-box;
+
+  height: 0;
+
+}pre,
+
+textarea {
+
+  overflow: auto;
+
+}code,
+
+kbd,
+
+pre,
+
+samp {
+
+  font-family: monospace,monospace;
+
+  font-size: 1em;
+
+}button,
+
+input,
+
+optgroup,
+
+select,
+
+textarea {
+
+  font: inherit;
+
+
+
+  margin: 0;
+
+
+
+  color: inherit;
+
+}button {
+
+  overflow: visible;
+
+}button,
+
+select {
+
+  text-transform: none;
+
+}button,
+
+html input[type=button],
+
+input[type=reset],
+
+input[type=submit] {
+
+  cursor: pointer;
+
+
+
+  -webkit-appearance: button;
+
+}button[disabled],
+
+html input[disabled] {
+
+  cursor: default;
+
+}button::-moz-focus-inner,
+
+input::-moz-focus-inner {
+
+  padding: 0;
+
+
+
+  border: 0;
+
+}input {
+
+  line-height: normal;
+
+}input[type=checkbox],
+
+input[type=radio] {
+
+  box-sizing: border-box;
+
+  padding: 0;
+
+}input[type=number]::-webkit-inner-spin-button,
+
+input[type=number]::-webkit-outer-spin-button {
+
+  height: auto;
+
+}input[type=search] {
+
+  box-sizing: content-box;
+
+
+
+  -webkit-appearance: textfield;
+
+}input[type=search]::-webkit-search-cancel-button,
+
+input[type=search]::-webkit-search-decoration {
+
+  -webkit-appearance: none;
+
+}fieldset {
+
+  margin: 0 2px;
+
+  padding: .35em .625em .75em;
+
+
+
+  border: 1px solid silver;
+
+}table {
+
+  border-spacing: 0;
+
+  border-collapse: collapse;
+
+}
+
+
+
+*,
+
+*:before,
+
+*:after {
+
+  box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+body {
+
+  font-family: 'Open Sans', Tahoma, sans-serif;
+
+
+
+  display: flex;
+
+
+
+  background-color: rgb(34, 38, 45);
+
+  background-image: url('images/background.jpg');
+
+  background-repeat: no-repeat;
+
+  background-position: top center;
+
+
+
+  justify-content: center;
+
+}
+
+
+
+/* @media (min-width: 1906px) {
+
+  background-size: auto 100%;
+
+} */
+
+
+
+
+
+a {
+
+  color: #414d61;
+
+}
+
+
+
+
+
+.container {
+
+  display: flex;
+
+  flex-direction: column;
+
+
+
+  width: 1100px;
+
+  max-width: 100vw;
+
+}
+
+
+
+.container-content {
+
+  display: flex;
+
+  flex-direction: row;
+
+
+
+  border-width: 1px;
+
+  border-style: none solid;
+
+  border-color: rgba(200, 225, 251, .3);
+
+  background-color: white;
+
+}
+
+
+
+
+
+
+
+.header {
+
+  display: flex;
+
+  flex-direction: row;
+
+
+
+  justify-content: center;
+
+}
+
+
+
+.header h1 {
+
+  margin: 0;
+
+}
+
+
+
+.nav {
+
+  z-index: 999;
+
+
+
+  padding: 0 15px;
+
+
+
+  text-transform: uppercase;
+
+
+
+  border: solid 1px #848d9c;
+
+  background-color: #414d61;
+
+}
+
+
+
+.nav ul {
+
+  display: flex;
+
+
+
+  margin: 0;
+
+  padding-left: 0;
+
+
+
+  list-style-type: none;
+
+
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.nav > ul {
+
+  flex-direction: row;
+
+
+
+  max-width: 100%;
+
+}
+
+
+
+.nav li > a {
+
+  font-size: 12px;
+
+
+
+  display: block;
+
+
+
+  padding: 15px;
+
+
+
+  text-decoration: none;
+
+
+
+  color: white;
+
+}
+
+
+
+.nav a:hover,
+
+.nav a:active,
+
+.nav a:focus {
+
+  background-color: #353f50;
+
+}
+
+
+
+.nav li > ul {
+
+  display: none;
+
+  flex-direction: column;
+
+
+
+  width: 200px;
+
+
+
+  border: solid 1px #848d9c;
+
+  background-color: #414d61;
+
+  /*border-top: none;*/
+
+  box-shadow: 0 0 4px rgba(55, 164, 208, .1);
+
+}
+
+
+
+.nav li:hover > ul {
+
+  position: absolute;
+
+
+
+  display: block;
+
+}
+
+
+
+/* [!] .nav zmienić na .nav */
+
+
+
+.nav--sticky {
+
+  position: fixed;
+
+  top: 0;
+
+
+
+  width: 1100px;
+
+  max-width: 100vw;
+
+
+
+  transition: top .2s;
+
+}
+
+
+
+
+
+
+
+.content,
+
+.sidebar,
+
+.footer {
+
+  padding: 15px;
+
+}
+
+
+
+.content {
+
+  position: relative;
+
+
+
+  width: calc(70% + 1px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+
+  position: relative;
+
+
+
+  width: 30%;
+
+
+
+  background-color: rgb(244, 244, 246);
+
+}
+
+
+
+
+
+
+
+
+
+.post img, #tribe-events-content img {
+
+  position: relative;
+
+  max-width: 100%;
+
+}
+
+body.single .post img, #tribe-events-content img {height: auto;}
+
+
+
+
+
+.archive:not(.category-przedszkole):not(.category-biblioteka):not(.category-rada-solecka):not(.category-parafia):not(.category-dom-kultury) .post,
+
+.blog:not(.category-przedszkole):not(.category-biblioteka):not(.category-rada-solecka):not(.category-parafia):not(.category-dom-kultury) .post,
+
+body.blog .tribe_events {
+
+  font-size: 10pt;
+
+
+
+  display: flex;
+
+
+
+  min-height: 150px;
+
+  margin-bottom: 10px;
+
+
+
+  border-radius: 1px;
+
+  background: rgba(65, 77, 97, .06);
+
+}
+
+
+
+/*.blog .format-link {
+
+  min-height: 100px!important;
+
+  height: 100px;
+
+}
+
+.blog .format-link i {
+
+  position: relative;
+
+  height: 100px;
+
+  width: 100px;
+
+  min-width: 100px;
+
+  max-width: 100px;
+
+  background-color: #414D61;
+
+  line-height: 100px;
+
+  text-align: center;
+
+  color: white;
+
+  font-size: 40px;
+
+}
+
+
+
+.blog .format-link .title,
+
+.blog .format-link .date {
+
+  text-shadow: 0 1px 2px black;
+
+}
+
+.blog .format-link .category a,
+
+.blog .format-link .info a {
+
+  box-shadow: 0 1px 2px black;
+
+}*/
+
+
+
+body.blog .tribe_events .title,
+
+.post .post-header .title,
+
+.page .post-header .title {
+
+  margin: 0;
+
+}
+
+
+
+body.blog .tribe_events .title a,
+
+.post .post-header .title a {
+
+  text-decoration: none;
+
+}
+
+
+
+body.blog .tribe_events .thumbail,
+
+.archive .post .thumbail,
+
+.blog .post .thumbail {
+
+  width: 150px;
+
+  max-width: 150px;
+
+  height: 150px;
+
+  max-height: 150px;
+
+
+
+  opacity: .8;
+
+}
+
+
+
+body.blog .tribe_events > div,
+
+.archive:not(.category-parafia) .post > div,
+
+.blog .post > div {
+
+  display: flex;
+
+  flex-direction: column;
+
+
+
+  width: 100%;
+
+  padding: 5px;
+
+  padding-left: 10px;
+
+
+
+  justify-content: space-between;
+
+}
+
+
+
+body.blog .tribe_events .meta .category ul,
+
+.post .meta .category ul {
+
+  display: inline-block;
+
+
+
+  margin: 0;
+
+  padding: 0;
+
+
+
+  list-style: none;
+
+}
+
+
+
+body.blog .tribe_events p,
+
+.post p {
+
+  margin-top: 0;
+
+}
+
+
+
+body.blog .tribe_events .meta .category li,
+
+.post .meta .category li {
+
+  display: inline-block;
+
+}
+
+body.blog .tribe_events .meta .category li a,
+
+.post .meta .category li a {
+
+  font-size: .8em;
+
+
+
+  display: inline-block;
+
+
+
+  margin: 1px;
+
+  padding: 2px 6px;
+
+
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+
+
+  color: white;
+
+  background: rgb(65, 77, 97);
+
+}
+
+
+
+body.blog .tribe_events .info,
+
+.post .info {
+
+  margin: 3px;
+
+  margin-left: 6px;
+
+
+
+  text-align: right;
+
+}
+
+
+
+body.blog .tribe_events .info .date,
+
+.post .info .date {
+
+  font-size: .9em;
+
+
+
+  color: #414d61;
+
+}
+
+
+
+body.blog .tribe_events .info a,
+
+.post .info a {
+
+  display: inline-block;
+
+
+
+  padding: 2px 6px;
+
+
+
+  text-decoration: none;
+
+
+
+  color: white;
+
+  border: 1px solid #848d9c;
+
+  background-color: #414d61;
+
+}
+
+
+
+
+
+
+
+.panels img {
+
+  outline: 1px solid rgba(65,77,97,.2);
+
+  outline-offset: -1px;
+
+}
+
+
+
+
+
+.widgets {
+
+  margin: 0;
+
+  padding: 0;
+
+
+
+  list-style: none;
+
+}
+
+
+
+.widgets * {
+
+  position: relative;
+
+
+
+  max-width: 100%;
+
+}
+
+
+
+.widget_search #s {
+
+  position: relative;
+
+
+
+  width: 70%;
+
+}
+
+
+
+.widget_search #searchsubmit {
+
+  position: relative;
+
+
+
+  width: 30%;
+
+}
+
+
+
+.widget_search .screen-reader-text {
+
+  display: none;
+
+}
+
+
+
+
+
+.widget {
+
+  font-size: .8em;
+
+}
+
+
+
+.widget .widgettitle {
+
+  font-size: 1.1em;
+
+
+
+  margin-bottom: 0;
+
+
+
+  text-transform: uppercase;
+
+
+
+  color: #0089c0;
+
+}
+
+
+
+
+
+.tabela--biblioteka {
+
+  display: block;
+
+
+
+  width: 218px;
+
+  margin: 0 auto;
+
+  padding: 4px;
+
+
+
+  background: #dcc3a6;
+
+}
+
+
+
+.tabela--biblioteka tr {
+
+  border-top: dashed 1px white;
+
+  border-bottom: dashed 1px white;
+
+}
+
+
+
+.tabela--biblioteka tr > td:nth-child(1) {
+
+  color: #8c5e42;
+
+}
+
+
+
+.tabela--biblioteka td {
+
+  padding: 4px;
+
+}
+
+
+
+
+
+
+
+
+
+body.przedszkole {
+
+  background-color: #ffd9e1;
+
+  background-image: url(https://przywory.eu/wp-content/themes/przywory/images/background-przedszkole-v2.png);
+
+}
+
+
+
+body.przedszkole a {
+
+  color: #d8123f;
+
+}
+
+
+
+body.przedszkole .nav {
+
+  border-color: #FF728F;
+
+  background-color: #DC1F4A;
+
+}
+
+body.przedszkole .nav a {
+
+  color: white;
+
+}
+
+body.przedszkole .nav a:hover,
+
+body.przedszkole .nav a:active,
+
+body.przedszkole .nav a:focus {
+
+  background-color: #bf052f;
+
+}
+
+body.przedszkole .nav li > ul {
+
+  border-color: #FF728F;
+
+  background-color: #DC1F4A;
+
+}
+
+
+
+body.przedszkole .nav-second {
+
+  background-color: #FF728F;
+
+}
+
+body.przedszkole .nav-second a:hover,
+
+body.przedszkole .nav-second a:active,
+
+body.przedszkole .nav-second a:focus {
+
+  background-color: #fb6988;
+
+}
+
+
+
+body.przedszkole .sidebar {
+
+  background-color: rgba(255, 223, 223, .32);
+
+}
+
+
+
+body.przedszkole .sidebar .widgettitle {
+
+  color: #d8123f;
+
+}
+
+
+
+body.przedszkole .footer {
+
+  color: #5f2532;
+
+  background-color: #7d3444;
+
+}
+
+body.przedszkole .footer a {
+
+  color: #5f2532;
+
+}
+
+
+
+body.przedszkole .cd-top {
+
+  background-color: rgba(216, 18, 63, .8);
+
+}
+
+
+
+.przedszkole .tribe_events .meta .category li a,
+
+.przedszkole .post .meta .category li a {
+
+  background-color: #ff90a7;
+
+}
+
+
+
+.przedszkole.blog .tribe_events .info a,
+
+.przedszkole .post .info a {
+
+  border-color: rgb(255, 144, 167);
+
+  background-color: #d8123f;
+
+}
+
+
+
+.przedszkole.blog .tribe_events .info .date,
+
+.przedszkole .post .info .date {
+
+  color: #d8123f;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.nav-second {
+
+  z-index: 998;
+
+
+
+  border: none;
+
+  background-color: #848d9c;
+
+}
+
+.nav-second li > a {
+
+  padding: 10px;
+
+}
+
+.nav-second a:hover,
+
+.nav-second a:active,
+
+.nav-second a:focus {
+
+  background-color: #6c7584;
+
+}
+
+
+
+
+
+.nav-biblioteka {
+
+  background-color: #b99077!important;
+
+}
+
+.nav-biblioteka a {
+
+  color: white;
+
+}
+
+.nav-biblioteka a:hover,
+
+.nav-biblioteka a:active,
+
+.nav-biblioteka a:focus {
+
+  background-color: #a57c63!important;
+
+}
+
+
+
+
+
+
+
+.cd-top {
+
+  position: fixed;
+
+  right: 10px;
+
+  bottom: 40px;
+
+
+
+  display: inline-block;
+
+  visibility: hidden;
+
+  overflow: hidden;
+
+
+
+  width: 40px;
+
+  height: 40px;
+
+
+
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+
+     -moz-transition: opacity .3s 0s, visibility 0s .3s;
+
+          transition: opacity .3s 0s, visibility 0s .3s;
+
+  white-space: nowrap;
+
+  text-indent: 100%;
+
+
+
+  opacity: 0;
+
+  background: rgba(65,77,97,.8) url(./images/cd-top-arrow.svg) no-repeat center 50%;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+
+}
+
+.cd-top.cd-is-visible,
+
+.cd-top.cd-fade-out,
+
+.no-touch .cd-top:hover {
+
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+
+     -moz-transition: opacity .3s 0s, visibility 0s 0s;
+
+          transition: opacity .3s 0s, visibility 0s 0s;
+
+}
+
+.cd-top.cd-is-visible {
+
+  visibility: visible;
+
+
+
+  opacity: 1;
+
+}
+
+.cd-top.cd-fade-out {
+
+  opacity: .5;
+
+}
+
+.no-touch .cd-top:hover {
+
+  opacity: 1;
+
+  background-color: #e86256;
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .cd-top {
+
+    right: 20px;
+
+    bottom: 20px;
+
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .cd-top {
+
+    right: 30px;
+
+    bottom: 30px;
+
+
+
+    width: 60px;
+
+    height: 60px;
+
+  }
+
+}
+
+
+
+
+
+/*
+
+ * CIASTECZKA
+
+ */
+
+#cookieinfo {
+
+  font-family: Arial, Verdana, sans-serif;
+
+  font-size: 12px;
+
+
+
+  width: 100%;
+
+  margin-bottom: 15px;
+
+  padding: 10px;
+
+
+
+  border: 1px solid #eee;
+
+}
+
+
+
+#cookieinfo p {
+
+  font-size: 12px;
+
+  line-height: 1.5em;
+
+
+
+  margin: 0;
+
+}
+
+
+
+#cookieinfo button {
+
+  font-weight: bold;
+
+
+
+  margin: 3px;
+
+  padding: 2px 6px;
+
+
+
+  color: #414d61;
+
+  border: 1px solid #eee;
+
+  background: white;
+
+}
+
+
+
+#cookieinfo button:focus,
+
+#cookieinfo button:active {
+
+  color: white;
+
+  outline: 0;
+
+  background: #414d61;
+
+}
+
+
+
+#cookieinfo a {
+
+  color: #414d61;
+
+}
+
+
+
+
+
+
+
+.navigation {
+
+  display: flex;
+
+
+
+  justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+.footer {
+
+  font-size: 10pt;
+
+
+
+  color: #496296;
+
+  background-color: #1d2638;
+
+}
+
+
+
+.footer a {
+
+  color: #496296;
+
+}
+
+
+
+.footer-menu {
+
+  display: inline-block;
+
+}
+
+.footer-menu ul {
+
+  margin: 0;
+
+  padding: 0;
+
+
+
+  list-style: none;
+
+}
+
+.footer-menu li {
+
+  display: inline-block;
+
+}
+
+.footer-menu a {
+
+  padding: 2px;
+
+
+
+  text-decoration: none;
+
+
+
+  border-right: 1px solid;
+
+}
+
+.footer-menu a:last-child {
+
+  border: none;
+
+}
+
+
+
+.footer p {
+
+  display: inline-block;
+
+  float: right;
+
+
+
+  margin: 0;
+
+}
+
+
+
+
+
+.single .post .title {
+
+  margin-bottom: 10px;
+
+}
+
+
+
+.page {
+
+  border-bottom: 1px solid #37a4d0;
+
+}
+
+
+
+
+
+#searchform input[type='text'] {
+
+  font-size: 14pt;
+
+
+
+  position: relative;
+
+
+
+  width: 100%;
+
+  margin-bottom: 10px;
+
+  padding: 3px;
+
+
+
+  border: solid 3px rgba(0,0,0,.08);
+
+}
+
+
+
+#searchform input[type='submit'] {
+
+  font-size: 12pt;
+
+
+
+  display: none;
+
+
+
+  margin-bottom: 5px;
+
+  padding: 5px;
+
+
+
+  color: white;
+
+  border: none;
+
+  background: rgba(0,0,0,.08);
+
+}
+
+
+
+
+
+
+
+
+
+/*
+
+ * #biblioteka
+
+ * -----------------------------------------------------------------------------
+
+ */
+
+
+
+body.biblioteka .nav {
+
+  border-color: #8c5e42;
+
+  background-color: #a87353;
+
+}
+
+
+
+body.biblioteka .nav a {
+
+  color: white;
+
+}
+
+body.biblioteka .nav a:hover,
+
+body.biblioteka .nav a:active,
+
+body.biblioteka .nav a:focus {
+
+  background-color: #8c5e42;
+
+}
+
+
+
+body.biblioteka .nav li > ul {
+
+  border: solid 1px #8c5e42;
+
+  background-color: #a87353;
+
+  box-shadow: -4px 0 4px rgba(55, 164, 208, .1);
+
+}
+
+
+
+body.biblioteka {
+
+  background-color: rgb(230, 207, 193);
+
+  background-image: url(https://przywory.eu/wp-content/uploads/2015/08/biblioteka-tlo.png);
+
+  background-repeat: repeat;
+
+  background-attachment: fixed;
+
+}
+
+
+
+body.biblioteka a {
+
+  color: #8c5e42;
+
+}
+
+
+
+
+
+body.biblioteka .sidebar {
+
+  background-color: rgb(247, 237, 228);
+
+}
+
+
+
+body.biblioteka .cd-top {
+
+  background-color: #a87353;
+
+}
+
+
+
+
+
+body.biblioteka .footer {
+
+  color: #dcc9bb;
+
+  background-color: #a78f7e;
+
+}
+
+body.biblioteka .footer a {
+
+  color: #dcc9bb;
+
+}
+
+
+
+.biblioteka .tribe_events .meta .category li a,
+
+.biblioteka .post .meta .category li a {
+
+  background-color: rgb(168, 115, 83);
+
+}
+
+
+
+.biblioteka.blog .tribe_events .info a,
+
+.biblioteka .post .info a {
+
+  border-color: #8c5e42;
+
+  background-color: #a87353;
+
+}
+
+
+
+.biblioteka.blog .tribe_events .info .date,
+
+.biblioteka .post .info .date {
+
+  color: #8c5e42;
+
+}
+
+
+
+
+
+
+
+.gallery-caption {
+
+  font-size: 10pt;
+
+  font-style: italic;
+
+
+
+  color: gray;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 780px) {
+
+  .container-content, .informator-elements-list, .post-type-archive-informator .content {
+
+    flex-direction: column;
+
+  }
+
+
+
+  .content, .sidebar, .informator-list, .informator-elements-list li {
+
+    width: 100%;
+
+  }
+
+
+
+  .nav--sticky {
+
+    position: static;
+
+    top: auto;
+
+  }
+
+
+
+  .panels {
+
+    text-align: center;
+
+  }
+
+  .post {
+
+    flex-direction: column;
+
+    align-items: center;
+
+  }
+
+}
+
+
+
+
+
+.breadcrumbs {
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 4px;
+
+}
+
+
+
+.breadcrumbs a{
+
+  color: white!important;
+
+  background-color: #C5C5C5;
+
+  text-decoration: none;
+
+  padding: 2px 3px;
+
+}
+
+
+
+blockquote {
+
+  background-color: #F9F9F9;
+
+  padding: 10px;
+
+  border-left: solid 6px #ECECEC;
+
+}
+
+
+
+
+
+/*
+
+ * Informator gospodarczy
+
+ * - - - - - - - - - - - - -
+
+ */
+
+
+
+.post-type-archive-informator .content, .single-informator .content {
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: row;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.post-type-archive-informator .content h1, .single-informator .content h1 {
+
+  text-align: center;
+
+  background-color: #414D61;
+
+  background-size: cover;
+
+  background-position: center;
+
+  color: #FFFFFF;
+
+  text-shadow: 0 2px 8px #000000;
+
+  margin: 0;
+
+  padding: 30px;
+
+  outline: 1px solid rgba(255,255,255,.3);
+
+  outline-style: inset;
+
+  outline-offset: -1px;
+
+  width: 100%;
+
+  margin-bottom: 5px;
+
+}
+
+
+
+.single-informator .content h1 a {
+
+  color: inherit;
+
+  text-decoration: none;
+
+}
+
+
+
+.informator-menu {
+
+  width: 200px;
+
+  background: #F4F4F6;
+
+  border-radius: 4px;
+
+  padding: 10px;
+
+  margin-top: 10px;
+
+  display: table;
+
+}
+
+.informator-menu p {
+
+  margin: 0;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  color: #414D61;
+
+}
+
+
+
+.informator-menu ul {
+
+  list-style: none;
+
+  padding-left: 5px;
+
+  margin: 0;
+
+}
+
+.informator-menu a {
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+}
+
+.informator-menu a:hover { color: black; transition: .5s; }
+
+
+
+.informator-list {
+
+  width: calc(100% - 200px);
+
+  padding-right: 15px;
+
+}
+
+
+
+.informator-list h2 {
+
+  margin-bottom: 0;
+
+  font-size: 22px;
+
+  color: #414D61;
+
+  text-shadow: 1px 2px 1px rgb(244, 244, 246);
+
+}
+
+
+
+.informator-elements-list {
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+}
+
+.informator-elements-list li {display: flex;width:calc(25% - 10px);margin:5px;}
+
+.informator-elements-list a {
+
+  position: relative;
+
+  background-color: #F4F4F6;
+
+  border-radius: 4px;
+
+  padding: 20px 5px;
+
+  text-align: center;
+
+  color: #414D61;
+
+  text-decoration: none;
+
+  width: 100%;
+
+}
+
+
+
+.informator .title {
+
+  text-align: center;
+
+}
+
+
+
+
+
+.informator-contacts {
+
+  text-align: center;
+
+  padding: 20px;
+
+}
+
+
+
+.informator-contacts a {
+
+  background-color: #848D9C;
+
+  height: 36px;
+
+  display: inline-block;
+
+  color: white;
+
+  line-height: 36px;
+
+  text-decoration: none;
+
+  margin-top: 5px;
+
+}
+
+
+
+.informator-contacts i {
+
+  background-color: #414D61;
+
+  padding: 10px;
+
+  height: 36px;
+
+  color: white;
+
+}
+
+
+
+.informator-contacts span {
+
+  padding: 0 10px;
+
+}
+
+
+
+.single-informator .breadcrumbs a {
+
+  background-color: #848D9C;
+
+}
+
+
+
+.informator-info {
+
+  background-color: rgba(132, 141, 156, 0.35);
+
+  color: #414D61;
+
+  padding: 10px;
+
+  border-radius: 4px;
+
+  font-size: 0.8em;
+
+  margin-top: 5px;
+
+}
+
+
+
+.aligncenter {text-align: center}
